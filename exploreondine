@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/a/AVvXsEi2Gz2_pm9_Guu1iz_MmAWkxJA_W9Qlsb4w3cZKQWgWkmu_u0AYHBd7IM7jmpeAHyeAC6HhrG0NINJ7VHBmZ-6YBWdd6as7Rv_n-aeBFe6_BpcjEn8sWBaFI8iVzRswBZD6uEgdphXNn6V-SlSHR4X7YtNzO6o4BzCFY7vqE0EttqPIGdyoCnqI-kZ65lg=s500">
+    <title>Ondine</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p.tagline {
+            color: #00B64F; /* Forest Green */
+            font-size: 1.2em;
+            margin: 10px 0 0 0;
+        }
+
+        .social-media {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-media a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-media a img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .home-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .home-link img {
+            width: 24px;
+            height: 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background-color: #3B6B4B; /* Forest Green */
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 25px; /* Oval shape */
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2F4F4F; /* Dark Forest Green */
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .vision-img, .what-we-are-img {
+            width: 300px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .team {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            flex: 1 1 150px; /* Adjust the basis size for responsiveness */
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .team-member p {
+            margin-top: 10px;
+        }
+
+        .partners {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .partner {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .partner img {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .partner p {
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p.tagline {
+                font-size: 1em;
+            }
+
+            .social-media {
+                top: 10px;
+                right: 10px;
+            }
+
+            .social-media a img {
+                width: 20px;
+                height: 20px;
+            }
+
+            .home-link {
+                top: 10px;
+                left: 10px;
+            }
+
+            .home-link img {
+                width: 20px;
+                height: 20px;
+            }
+
+            nav a {
+                padding: 8px 15px;
+                margin: 5px;
+                font-size: 0.9em;
+            }
+
+            .vision-img, .what-we-are-img {
+                float: none;
+                display: block;
+                margin: 0 auto 20px auto;
+                width: 80%;
+            }
+
+            .team-member img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .team-member p {
+                font-size: 0.9em;
+            }
+
+            .partner img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .partner p {
+                font-size: 1em;
+            }
+        }
+
+        /* New styles for dark green titles */
+        .section-title {
+            color: #00BF63; /* Dark Green */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.ondinegreen.org" class="home-link" target="_blank">
+            <img src="https://i.ibb.co/8BPdBvf/home-xxl.png" alt="Home">
+            <span>Visit our Blog Page</span>
+        </a>
+        <h1>Explore Ondine!</h1>
+        <p class="tagline">"Exploring Intersection of Ideas"</p>
+        <div class="social-media">
+            <a href="mailto:support@ondingreen.org" target="_blank">
+                <img src="https://i.ibb.co/54rZWSw/message-outline-xxl.png" alt="Mail">
+            </a>
+            <a href="https://www.instagram.com/ondineofficial2024/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://x.com/officialondine" target="_blank">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-white-icon.png" alt="X (formerly Twitter)">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61561369648645" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+        </div>
+        <nav>
+            <a href="#vision">Our Vision</a>
+            <a href="#what-we-are">What We Are</a>
+            <a href="#team">Our Team</a>
+            <a href="#partners">Our Partners</a>
+        </nav>
+    </header>
+    <section id="vision">
+        <img src="https://i.ibb.co/m9md2bq/opportunity.png" alt="Vision Image" class="vision-img">
+        <h1 class="section-title">Our Vision</h1>
+        <p>Empowering youth through workshops, engaging content, and expert insights, our blogging community focuses on green tech and sustainable development. We aim to inspire and educate the next generation on environmental issues, fostering a global network of proactive citizens. Through articles, events, and collaborations with industry leaders, we promote actionable solutions and advocate for a sustainable future. Join us in exploring innovative ideas, sharing success stories, and participating in impactful initiatives that drive positive change. Together, we can create a world where technology and sustainability harmoniously meet, ensuring a thriving planet for generations to come.</p>
+    </section>
+    <section id="what-we-are">
+        <img src="https://i.ibb.co/BVt4Dvp/question-mark.png" alt="What We Are Image" class="what-we-are-img">
+        <h1 class="section-title">What We Are</h1>
+        <p>Welcome to <b>Ondine</b>, where we harness the power of blogging to champion green technology and sustainable development. Our mission is to empower today's youth and future citizens with knowledge and inspiration to make a positive impact on our planet. Through insightful articles, workshops, expert collaborations, and engaging events, we strive to build a global community dedicated to environmental stewardship. Join us in exploring innovative solutions, sharing success stories, and advocating for a sustainable future. Together, we can pave the way for a greener, more sustainable world. Let's embark on this journey towards a brighter future.</p>
+    </section>
+    <section id="team">
+        <h1 class="section-title">Our Team</h1>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Kaushik">
+                <p>Alagadda Mahesh Varma</p>
+                <p>Founder & C.E.O</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.ibb.co/GH4rGsr/kaushik100x100.png" alt="Mahesh">
+                <p>Pamulapati Sai Kaushik Reddy</p>
+                <p>Co-Founder & C.T.O</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Rohan">
+                <p>Siddarth Sistla</p>
+                <p>C.O.O & Social Media Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.ibb.co/h8dtsdM/kaushik100x100-1.png" alt="Kishan">
+                <p>Eekshita Nimmagadda</p>
+                <p>Blog Writing & Research Wing</p>
+            </div>
+        </div>
+    </section>
+    <section id="partners" class="partners">
+        <h1 class="section-title">Our Partners</h1>
+        <div class="partner">
+            <img src="https://digitai.in/wp-content/uploads/2023/04/l.png" alt="Partner 1">
+            <p>Digit AI</p>
+    </section>
+</body>
+</html>
